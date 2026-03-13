@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okikijesu Ezekiel — Product Manager</title>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ── BACKGROUND ── -->
+  <div class="bg-wrap">
+    <div class="aurora a1 parallax-slow"></div>
+    <div class="aurora a2 parallax-med"></div>
+    <div class="aurora a3 parallax-slow"></div>
+    <div class="aurora a4 parallax-med"></div>
+    <div class="bg-grid"></div>
+    <canvas class="stars-canvas" id="starsCanvas"></canvas>
+    <div class="bg-particles" id="particles"></div>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-logo">Okikijesu<span>.</span></div>
+    <ul class="nav-links">
+      <li class="hide-sm"><a href="#about">About</a></li>
+      <li class="hide-sm"><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-left">
+
+      <div class="hero-eyebrow fade-up delay-1">
+        <div class="hero-dot"></div>
+        <span class="hero-eyebrow-text">Product Manager · Builder · Problem Solver</span>
+      </div>
+
+      <h1 class="fade-up delay-2">
+        <span class="line1">Building products</span>
+        <span class="line2">that <span class="typed-word" id="typedWord"></span><span class="typing-cursor" id="typingCursor"></span></span>
+      </h1>
+
+      <p class="hero-sub fade-up delay-3">I'm Okikijesu Ezekiel Ìyànúolùwà — a product-minded technologist passionate about building digital tools that solve real-world problems and create meaningful experiences.</p>
+
+      <div class="hero-actions fade-up delay-4">
+        <a href="#work" class="btn btn-purple">View Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+
+      <div class="hero-stats fade-up delay-5">
+        <div class="stat-item">
+          <div class="stat-num" data-target="5" data-suffix="">0</div>
+          <div class="stat-label">Product Concepts</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-label">User-Centered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-text="MVP">MVP</div>
+          <div class="stat-label">First Thinker</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-photo-wrap fade-up delay-3 parallax-fast">
+      <div class="hero-photo-frame">
+        <img src="IMG-20251204-WA0081.jpg" alt="Okikijesu Ezekiel"
+             onerror="this.style.display='none';this.parentElement.querySelector('.hero-photo-placeholder').style.display='flex';">
+        <div class="hero-photo-placeholder" style="display:none;">
+          <span>👤</span>
+          <span>Add photo here</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="section-tag">About Me</div>
+    <h2>Curious by nature,<br><em>driven by impact.</em></h2>
+    <div class="about-layout">
+
+      <div class="about-body reveal">
+        <p>I'm Okikijesu Ezekiel Ìyànúolùwà — a product-minded builder with a deep passion for creating digital experiences that solve meaningful problems. I sit at the intersection of strategy, design thinking, and technology to build products people actually love.</p>
+        <p>My approach starts with understanding people — their pains, their goals, and the invisible friction in their everyday lives. From there, I translate insights into clear product visions, define MVPs with ruthless focus, and think in systems to build solutions that scale.</p>
+        <p>I'm particularly drawn to products that expand access and opportunity — tools for learners, creators, families, and communities that are often underserved by mainstream technology.</p>
+        <div class="skills-chips">
+          <span class="skill-chip">Product Strategy</span>
+          <span class="skill-chip">User Research</span>
+          <span class="skill-chip">MVP Definition</span>
+          <span class="skill-chip">Roadmapping</span>
+          <span class="skill-chip">Design Thinking</span>
+          <span class="skill-chip">Market Analysis</span>
+          <span class="skill-chip">Agile / Scrum</span>
+          <span class="skill-chip">Figma</span>
+          <span class="skill-chip">Systems Thinking</span>
+        </div>
+      </div>
+
+      <div class="philo-card reveal">
+        <h3>My Product Philosophy</h3>
+        <div class="philo-item">
+          <span class="philo-num">01</span>
+          <div><strong>Start with the problem, not the solution</strong><p>Great products are born from deep understanding of real pain, not feature lists.</p></div>
+        </div>
+        <div class="philo-item">
+          <span class="philo-num">02</span>
+          <div><strong>Build small, learn fast</strong><p>An MVP shipped today beats a perfect product that never launches.</p></div>
+        </div>
+        <div class="philo-item">
+          <span class="philo-num">03</span>
+          <div><strong>Empathy is a superpower</strong><p>Understanding your users at a human level is the ultimate competitive advantage.</p></div>
+        </div>
+        <div class="philo-item">
+          <span class="philo-num">04</span>
+          <div><strong>Clarity over complexity</strong><p>The best products feel simple. That simplicity is the result of hard decisions.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section">
+    <div class="reveal">
+      <div class="section-tag">Skills</div>
+      <h2>What I bring<br><em>to the table.</em></h2>
+    </div>
+    <div class="skills-section-grid">
+
+      <div class="skill-card sk-hard reveal">
+        <div class="skill-card-icon">⚙️</div>
+        <div class="skill-card-type">Hard Skills</div>
+        <h3>Product &<br>Technical</h3>
+        <ul class="skill-list">
+          <li>Product Management</li>
+          <li>Product Strategy & Planning</li>
+          <li>Writing PRDs</li>
+          <li>User Research & Problem Identification</li>
+          <li>Feature Planning & Product Thinking</li>
+          <li>Front-End Basics (HTML, CSS, JS, React)</li>
+          <li>Storytelling</li>
+          <li>Writing</li>
+        </ul>
+      </div>
+
+      <div class="skill-card sk-soft reveal">
+        <div class="skill-card-icon">🤝</div>
+        <div class="skill-card-type">Soft Skills</div>
+        <h3>People &<br>Mindset</h3>
+        <ul class="skill-list">
+          <li>Communication & Documentation</li>
+          <li>Problem Solving</li>
+          <li>Creative Thinking</li>
+          <li>Leadership</li>
+          <li>Time Management & Prioritization</li>
+          <li>Collaboration & Teamwork</li>
+        </ul>
+      </div>
+
+      <div class="skill-card sk-bonus reveal">
+        <div class="skill-card-icon">✨</div>
+        <div class="skill-card-type">Core Trait</div>
+        <h3>Curiosity &<br>Learning</h3>
+        <ul class="skill-list">
+          <li>Relentlessly curious about people, products & systems</li>
+          <li>Self-directed learner who grows through building</li>
+          <li>Always asking <em style="color:#f9a8d4;">"why does this problem exist?"</em></li>
+          <li>Turns every project into a learning opportunity</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WORK ── -->
+  <section id="work" class="section">
+    <div class="work-header reveal">
+      <div>
+        <div class="section-tag">Selected Work</div>
+        <h2>Products I've <em>imagined</em><br>& defined.</h2>
+      </div>
+      <p class="section-desc">Five product concepts — from discovery through MVP definition — each grounded in real human problems.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card pc1 reveal" onclick="openModal('studypilot')">
+        <div class="card-glow"></div>
+        <div class="card-bg-emoji">📚</div>
+        <div class="card-top">
+          <span class="card-num">01 / 05</span>
+          <span class="card-badge b-edtech">EdTech</span>
+        </div>
+        <span class="card-emoji">📚</span>
+        <div class="card-title">StudyPilot</div>
+        <div class="card-sub">Smart Study Assistant</div>
+        <p class="card-desc">A digital study assistant helping students build consistent learning habits through personalized scheduling, reminders, and progress tracking.</p>
+        <div class="card-footer">
+          <div class="card-tags"><span class="card-tag">EdTech</span><span class="card-tag">Productivity</span></div>
+          <button class="card-btn">Case Study <div class="card-arrow-circle">→</div></button>
+        </div>
+      </div>
+
+      <div class="project-card pc2 reveal" onclick="openModal('grocerymate')">
+        <div class="card-glow"></div>
+        <div class="card-bg-emoji">🛒</div>
+        <div class="card-top">
+          <span class="card-num">02 / 05</span>
+          <span class="card-badge b-consumer">Consumer</span>
+        </div>
+        <span class="card-emoji">🛒</span>
+        <div class="card-title">GroceryMate</div>
+        <div class="card-sub">Smart Grocery Management</div>
+        <p class="card-desc">A mobile app helping households track groceries, reduce food waste, and discover recipes from available ingredients.</p>
+        <div class="card-footer">
+          <div class="card-tags"><span class="card-tag">Consumer</span><span class="card-tag">Food Tech</span></div>
+          <button class="card-btn">Case Study <div class="card-arrow-circle">→</div></button>
+        </div>
+      </div>
+
+      <div class="project-card pc3 reveal" onclick="openModal('couples')">
+        <div class="card-glow"></div>
+        <div class="card-bg-emoji">💛</div>
+        <div class="card-top">
+          <span class="card-num">03 / 05</span>
+          <span class="card-badge b-personal">Personal Dev</span>
+        </div>
+        <span class="card-emoji">💛</span>
+        <div class="card-title">Couples OS</div>
+        <div class="card-sub">Relationship Growth Platform</div>
+        <p class="card-desc">A shared digital platform empowering couples to grow intentionally through check-ins, shared goals, and guided communication.</p>
+        <div class="card-footer">
+          <div class="card-tags"><span class="card-tag">Relationships</span><span class="card-tag">Wellness</span></div>
+          <button class="card-btn">Case Study <div class="card-arrow-circle">→</div></button>
+        </div>
+      </div>
+
+      <div class="project-card pc4 reveal" onclick="openModal('brainbattle')">
+        <div class="card-glow"></div>
+        <div class="card-bg-emoji">🧩</div>
+        <div class="card-top">
+          <span class="card-num">04 / 05</span>
+          <span class="card-badge b-game">EdGame</span>
+        </div>
+        <span class="card-emoji">🧩</span>
+        <div class="card-title">BrainBattle</div>
+        <div class="card-sub">Gamified Tech Learning</div>
+        <p class="card-desc">A gamified quiz platform making tech learning addictive — where learners compete and deepen knowledge through challenges.</p>
+        <div class="card-footer">
+          <div class="card-tags"><span class="card-tag">Gamification</span><span class="card-tag">EdTech</span></div>
+          <button class="card-btn">Case Study <div class="card-arrow-circle">→</div></button>
+        </div>
+      </div>
+
+      <div class="project-card pc5 card-wide reveal" onclick="openModal('heartreminder')">
+        <div class="card-glow"></div>
+        <div class="card-bg-emoji">💖</div>
+        <div class="cw-left">
+          <div class="card-top">
+            <span class="card-num">05 / 05</span>
+            <span class="card-badge b-wellbeing">Featured</span>
+          </div>
+          <span class="card-emoji">💖</span>
+          <div class="card-title">HeartReminder</div>
+          <div class="card-sub">Smart Relationship Reminder App</div>
+          <p class="card-desc">A relationship-first app helping people never miss birthdays, anniversaries, and moments that matter — with multi-stage smart reminders and one-tap actions to reach out instantly.</p>
+        </div>
+        <div class="cw-right">
+          <div class="card-quote-box"><p>"We don't just remind you — we help you show up."</p></div>
+          <div class="card-footer">
+            <div class="card-tags"><span class="card-tag">Emotional UX</span><span class="card-tag">Consumer</span><span class="card-tag">Mobile</span></div>
+            <button class="card-btn">Case Study <div class="card-arrow-circle">→</div></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROCESS ── -->
+  <section id="process" class="section">
+    <div class="reveal">
+      <div class="section-tag">How I Work</div>
+      <h2>My product <em>thinking</em><br>process.</h2>
+    </div>
+    <div class="process-track">
+      <div class="p-node reveal">
+        <div class="node-dot">🔍</div>
+        <div class="node-step-num">Step 01</div>
+        <h3>Discover</h3>
+        <p>Observe real behavior, listen for pain, and ask better questions to uncover problems worth solving.</p>
+      </div>
+      <div class="p-node reveal">
+        <div class="node-dot">🎯</div>
+        <div class="node-step-num">Step 02</div>
+        <h3>Define</h3>
+        <p>Frame the core problem clearly. Align on who the user is and what success truly looks like.</p>
+      </div>
+      <div class="p-node reveal">
+        <div class="node-dot">💡</div>
+        <div class="node-step-num">Step 03</div>
+        <h3>Ideate</h3>
+        <p>Generate diverse solutions without constraints, then filter ruthlessly for impact and feasibility.</p>
+      </div>
+      <div class="p-node reveal">
+        <div class="node-dot">⚡</div>
+        <div class="node-step-num">Step 04</div>
+        <h3>Prioritize</h3>
+        <p>Identify the smallest set of features that deliver the highest value — that's the MVP.</p>
+      </div>
+      <div class="p-node reveal">
+        <div class="node-dot">🚀</div>
+        <div class="node-step-num">Step 05</div>
+        <h3>Launch & Learn</h3>
+        <p>Ship early, gather feedback, measure outcomes, and iterate toward product-market fit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="reveal">
+      <div class="section-tag">Let's Connect</div>
+      <h2>Ready to build<br><em>something great?</em></h2>
+    </div>
+    <div class="contact-layout">
+
+      <div class="contact-info reveal">
+        <p>I'm actively looking for product management opportunities where I can contribute, learn, and grow. Whether you're building something bold or need a product thinker to join your team — let's talk.</p>
+        <div class="contact-cards">
+          <a href="/cdn-cgi/l/email-protection#640b0f0d0f0d0e011711011e010f0d0108240309050d084a070b09" class="c-card">
+            <div class="c-icon">✉️</div>
+            <div class="c-card-text"><strong>Email</strong><span><span class="__cf_email__" data-cfemail="026d696b696b68677177677867696b676e42656f636b6e2c616d6f">[email&#160;protected]</span></span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/okikijesu-ezekiel-iyanu-3860141b4" target="_blank" class="c-card">
+            <div class="c-icon">💼</div>
+            <div class="c-card-text"><strong>LinkedIn</strong><span>linkedin.com/in/okikijesu-ezekiel</span></div>
+          </a>
+          <a href="https://x.com/therealokipez1" target="_blank" class="c-card">
+            <div class="c-icon">🐦</div>
+            <div class="c-card-text"><strong>Twitter / X</strong><span>@therealokipez1</span></div>
+          </a>
+          <a href="https://wa.me/qr/OTBQWQJCEOYMC1" target="_blank" class="c-card">
+            <div class="c-icon">💬</div>
+            <div class="c-card-text"><strong>WhatsApp</strong><span>Chat directly</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="open-for-card reveal">
+        <h3>Open to</h3>
+        <div class="philo-item">
+          <span class="philo-num">→</span>
+          <div><strong>Full-time PM Roles</strong><p>Junior to mid-level product management positions</p></div>
+        </div>
+        <div class="philo-item">
+          <span class="philo-num">→</span>
+          <div><strong>Contract & Consulting</strong><p>Product strategy, roadmap definition, user research</p></div>
+        </div>
+        <div class="philo-item">
+          <span class="philo-num">→</span>
+          <div><strong>Collaborations</strong><p>Partnering with founders building meaningful products</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">Okikijesu<span>.</span></div>
+    <p>© 2026 Okikijesu Ezekiel Ìyànúolùwà · Product Manager</p>
+    <p>Built with intention ✨</p>
+  </footer>
+
+  <!-- ── MODAL ── -->
+  <div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+    <div class="modal-box">
+      <div class="modal-stripe"></div>
+      <div class="modal-header">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <span class="modal-emoji" id="m-emoji"></span>
+        <div class="modal-badge" id="m-badge"></div>
+        <div class="modal-title" id="m-title"></div>
+      </div>
+      <div class="modal-body" id="m-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
