@@ -33,9 +33,11 @@ const medEls  = document.querySelectorAll('.parallax-med');
 const fastEls = document.querySelectorAll('.parallax-fast');
 
 (function animParallax() {
-  slowEls.forEach(el => { el.style.transform = `translate(${parallaxX * 18}px, ${parallaxY * 12}px)`; });
-  medEls.forEach(el  => { el.style.transform = `translate(${parallaxX * 30}px, ${parallaxY * 20}px)`; });
-  fastEls.forEach(el => { el.style.transform = `translate(${parallaxX * 12}px, ${parallaxY * 8}px)`;  });
+  if (window.innerWidth > 768) {
+    slowEls.forEach(el => { el.style.transform = `translate(${parallaxX * 18}px, ${parallaxY * 12}px)`; });
+    medEls.forEach(el  => { el.style.transform = `translate(${parallaxX * 30}px, ${parallaxY * 20}px)`; });
+    fastEls.forEach(el => { el.style.transform = `translate(${parallaxX * 12}px, ${parallaxY * 8}px)`;  });
+  }
   requestAnimationFrame(animParallax);
 })();
 
@@ -254,3 +256,4 @@ function closeModalOutside(e) {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+ 
